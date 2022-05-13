@@ -1,4 +1,5 @@
-var minutes
+var minutesfortimer = 10;
+let time = starting
 function Correct() {
     console.log("Correct");
 }
@@ -21,5 +22,5 @@ function QuestionSwap()
 //global scope of correct 
 // us primitive events In JavaScript, a primitive (primitive value, primitive data type) is data that is not an object and has no methods or properties. There are 7 primitive data types: string, number, bigint, boolean, undefined, symbol, and null. google
 
-function Timer()Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+function timer()Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 console.log(timer);
