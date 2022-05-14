@@ -1,6 +1,9 @@
+var subbmitQuiz
+var cycleQuestions
 var minutesfortimer = 10;
 let time = starting
  
+
 function clickHandler(event){
   console.log('Button click');
 }
@@ -51,5 +54,71 @@ const QuestionArray = ['How would you use somthing from your html in JavaScript?
 
 const CorrectAnswers = ['Class or Id.','semicolon. ;','To create a complex or simple group of commands to achive an operation.','JavaScript helps us do tasks that would be considered complex to achive with just html and css.','A list.','To make a group of items that the programmer can pull from.','The scope of a var is functional scope while the scope of const is block scope.'];
 
+let questionsArray = ["question1", "question2", "question3"]
+
+let test = {
+  question1: {
+    questionText: "How would you use somthing from your html in JavaScript?",
+    possibleAnswers: ["I have a chicken", "Class or ID", "3","4"],
+    correctAnswer: "Class or ID"
+  },
+  question2: {
+    questionText: "What must end any string in javascript?",
+    possibleAnswers: ["Vanilla","semicolon","3","4"],
+    correctAnswer: "semicolon"
+  },
+  question3: {
+    questionText:"What is the primart purpose of a function in Java Script?",
+    possibleAnswers:["1","2","3","4"],
+    correctAnswer:"To create a complex or simple group of commands to achive an operation."
+  },
+  question4: {
+    questionText:"Why do we need JavaScript at all and not just HTML or CSS?",
+    possibleAnswers:["1","2","3","4"],
+    correctAnswer:"JavaScript helps us do tasks that would be considered complex to achive with just html and css."
+  },
+  question5: {
+    questionText:"What is another name for an array in JavaScript?",
+    possibleAnswers:["1","2","3","4"],
+    correctAnswer:"A list"
+  },
+  question6: {
+    questionText:"What is the basic purpose of creating an array?",
+    possibleAnswers:["1","2","3","4"],
+    correctAnswer:"To make a group of items that the programmer can pull from."
+  },
+  question7: {
+    questionText:"What is the difference between Const and Var?",
+    possibleAnswers:["1","2","3","4"],
+    correctAnswer:"The scope of a var is functional scope while the scope of const is block scope."
+  }
+}
+
+questionsArray.forEach(function(currentQuestion) {
+  test[currentQuestion].possibleAnswers.forEach(function(currentPossibleAnsewer) {
+    // create  checkbox with currentPosiibleAnswer
+  })
+})
+
+for (let index1 = 0; index1 < questionsArray.length; index1++) {
+  const currentQuestion = questionsArray[index1];
+  
+  for (let index2 = 0; index2 <  test[currentQuestion].possibleAnswers.length; index2++) {
+    const currentPossibleAnsewer =  test[currentQuestion].possibleAnswers[index2];
+    
+    // create checkbox with currentPosiibleAnswer
+  }
+}
+
+
+
 function QuestionSwap(event){ document.getElementById('form').addEventListener('click',funtion(Event))};
+
+// When I hit the next Question button it cycles through the quenstions in the array
+// Next is to link the awnsers to the correct question
+// Add feedback for correct answer or an incorrect answer
+// make sure all awnsers history is loged at the end of the quiz
+// make sure another array with all the incorrect answers is made to seperate arrays to avoid wrong awnsers being pushed to the wrong questions therfore makeing the quiz way to easy
+
+function
 
