@@ -18,6 +18,7 @@
 .ButtonA {
     position: absolute;
     top: 150px;
+    color: red;
 }
 
 .ButtonB {
