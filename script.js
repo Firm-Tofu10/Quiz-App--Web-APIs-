@@ -65,31 +65,31 @@ let test = {
   question2: {
     questionText: "What must end any string in javascript?",
     possibleAnswers: ["Vanilla","semicolon","3","4"],
-    correctAnswer: "semicolon"
+    correctAnswer: "semicolon."
   },
   question3: {
     questionText:"What is the primart purpose of a function in Java Script?",
-    possibleAnswers:["1","2","3","4"],
+    possibleAnswers:["To create a complex or simple group of commands to achive an operation.","2","3","4"],
     correctAnswer:"To create a complex or simple group of commands to achive an operation."
   },
   question4: {
     questionText:"Why do we need JavaScript at all and not just HTML or CSS?",
-    possibleAnswers:["1","2","3","4"],
+    possibleAnswers:["JavaScript helps us do tasks that would be considered complex to achive with just html and css.","2","3","4"],
     correctAnswer:"JavaScript helps us do tasks that would be considered complex to achive with just html and css."
   },
   question5: {
     questionText:"What is another name for an array in JavaScript?",
-    possibleAnswers:["1","2","3","4"],
-    correctAnswer:"A list"
+    possibleAnswers:["1","2","A list.","4"],
+    correctAnswer:"A list."
   },
   question6: {
     questionText:"What is the basic purpose of creating an array?",
-    possibleAnswers:["1","2","3","4"],
+    possibleAnswers:["1","2","3","To make a group of items that the programmer can pull from."],
     correctAnswer:"To make a group of items that the programmer can pull from."
   },
   question7: {
     questionText:"What is the difference between Const and Var?",
-    possibleAnswers:["1","2","3","4"],
+    possibleAnswers:["The scope of a var is functional scope while the scope of const is block scope.","2","3","4"],
     correctAnswer:"The scope of a var is functional scope while the scope of const is block scope."
   }
 }
