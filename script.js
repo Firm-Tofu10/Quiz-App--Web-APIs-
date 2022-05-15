@@ -4,8 +4,12 @@ var minutesfortimer = 10;
 let time = 100
 var Container = document.getElementById('article')
 Container.style.display = "none"
-
-
+var CurrentQuestion = 0;
+var awnser1 = document.getElementById('ButtonA')
+var awnser2 = document.getElementById('ButtonB')
+var awnser3 = document.getElementById('ButtonC')
+var awnser4 = document.getElementById('ButtonD')
+var Question = document.getElementById('Qdisplay')
 function clickHandler(event) {
   console.log('Button click');
 }
@@ -38,7 +42,6 @@ document.getElementById('form').addEventListener("click", function (event) {
 });
 
 
-
 //prevent defalt becuse of form make use of even listeners click event
 //attach event listner to html buttons
 //change buttons to radio buttons only for not submit button (I think its done)
@@ -56,16 +59,16 @@ let questionsArray = [
   {
     questionText: "How would you use somthing from your html in JavaScript?",
     possibleAnswers: ["I have a chicken", "Class or ID", "3", "4"],
-    correctAnswer: "Class or ID"
+    correctAnswer:1
   },
   {
     questionText: "What must end any string in javascript?",
     possibleAnswers: ["Vanilla", "semicolon", "3", "4"],
-    correctAnswer: "semicolon."
+    correctAnswer: 1
   },
   {
     questionText: "What is the primart purpose of a function in Java Script?",
-    possibleAnswers: ["To create a complex or simple group of commands to achive an operation.", "2", "3", "4"],
+    possibleAnswers: ["To Create a complex or simple group of commands to achive an operation.", "2", "3", "4"],
     correctAnswer: "To create a complex or simple group of commands to achive an operation."
   },
   {
@@ -93,9 +96,19 @@ let questionsArray = [
 
 
 subbmitQuiz.addEventListener('click',function(){
-  Container.style.display = "block"
-  subbmitQuiz.style.display = "none"
+  Container.style.display = "block";
+  subbmitQuiz.style.display = "none";
+  pushQuestion();
 })
+
+function pushQuestion() {
+  Question.textContent = questionsArray[CurrentQuestion].questionText
+  awnser1.textContent = questionsArray[CurrentQuestion].possibleAnswers[0]
+  awnser2.textContent = questionsArray[CurrentQuestion].possibleAnswers[1]
+  awnser3.textContent = questionsArray[CurrentQuestion].possibleAnswers[2]
+  awnser4.textContent = questionsArray[CurrentQuestion].possibleAnswers[3]
+  console.log("display", questionsArray[CurrentQuestion])
+}
 // questionsArray.forEach(function (currentQuestion) {
 //   test[currentQuestion].possibleAnswers.forEach(function (currentPossibleAnsewer) {
 //     // create  checkbox with currentPosiibleAnswer
