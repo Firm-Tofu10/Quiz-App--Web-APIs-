@@ -10,8 +10,11 @@ var awnser2 = document.getElementById('ButtonB')
 var awnser3 = document.getElementById('ButtonC')
 var awnser4 = document.getElementById('ButtonD')
 var Question = document.getElementById('Qdisplay')
+var selection = document.getElementsByName('selection')
+// selection.addEventListener()
+
 function clickHandler(event) {
-  console.log('Button click');
+  console.log('Button click',event);
 }
 
 // const btn = document.querySelector('.btn');
@@ -37,8 +40,11 @@ function Incorrect() {
 
 //Change div that is displayed
 
-document.getElementById('form').addEventListener("click", function (event) {
+document.getElementById('form').addEventListener("submit", function (event) {
   event.preventDefault()
+  let userSelection = event.target
+  console.log(userSelection.tagName)
+  console.log(userSelection.getAttribute("data-value"))
 });
 
 
