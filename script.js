@@ -1,7 +1,8 @@
 var subbmitQuiz = document.getElementById('StartSubmit')
 var cycleQuestions
 var minutesfortimer = 10;
-let time = 100
+let timeCount = 100;
+let timerObj;
 var Container = document.getElementById('article')
 Container.style.display = "none"
 var CurrentQuestion = 0;
@@ -12,6 +13,7 @@ var awnser4 = document.getElementById('ButtonD')
 var Question = document.getElementById('Qdisplay')
 var selection = document.getElementsByName('selection')
 var score = 0
+var timerElement = document.getElementById('timer')
 // selection.addEventListener()
 
 function clickHandler(event) {
@@ -52,7 +54,7 @@ document.getElementById('form').addEventListener("submit", function (event) {
         score += 10;
       }
     } else {
-
+results()
     }
   })
 if(CurrentQuestion<questionsArray.length-1) {
@@ -63,6 +65,11 @@ else{
 console.log(score)
 }
 });
+
+function results(){
+  Container.style.display = "none";
+  clearInterval(timerObj)
+}
 
 
 //prevent defalt becuse of form make use of even listeners click event
@@ -121,6 +128,15 @@ let questionsArray = [
 subbmitQuiz.addEventListener('click', function () {
   Container.style.display = "block";
   subbmitQuiz.style.display = "none";
+  // timerObj = setInterval(() => {
+  // timerElement.textContent =  "Time:"+timeCount  
+  // if(timeCount>1){
+  //   timeCount--
+  // }lelse
+  // {
+  //   results()
+  // }
+  // }, 1000);
   pushQuestion();
 })
 
