@@ -54,7 +54,7 @@ document.getElementById('form').addEventListener("submit", function (event) {
 });
 
 function results() {
-  container.style.display = "none";
+  container.style.display = "block";
   clearInterval(timerObj)
 }
 

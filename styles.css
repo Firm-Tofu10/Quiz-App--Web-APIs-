@@ -1,5 +1,5 @@
 .container {
-    background-color: rgba(138, 10, 138, 0.849);
+    background-color: rgba(71, 16, 154, 0.849);
     height: 1000px;
     width: 1000px;
     text-align: center;
@@ -42,18 +42,32 @@
    padding: 2.5rem;
    border: 1px solid black;
    height: 1rem;
-   align-items: center;
+   justify-content: center;
+	 align-items: center;
    word-break: break-all;
    border-radius: 1rem;
+	 height: 20px;
 }
 
-.StartButton {
+#StartSubmit {
     height: 100px;
     width: 100px;
+		color: white;
+		background-color: black;
+		border-color: white;
+		border-radius: 4rem;
+}
+#NextButton {
+	height: 100px;
+	width: 100px;
+	color: white;
+	background-color: black;
+	border-color: white;
+	border-radius: 4rem;
 }
 
 .Title {
-    color: rgba(255, 0, 0, 0.842);
+    color: rgba(39, 204, 149, 0.842);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 58px;
 }
