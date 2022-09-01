@@ -12,6 +12,7 @@ var awnser3 = document.getElementById('ButtonC')
 var awnser4 = document.getElementById('ButtonD')
 var question = document.getElementById('Qdisplay')
 var selection = document.getElementsByName('selection')
+var Adisplay = document.getElementsByTagName('Adisplay')
 var score = 0
 var timerElement = document.getElementById('timer')
 // selection.addEventListener()
@@ -38,9 +39,11 @@ document.getElementById('form').addEventListener("submit", function (event) {
     console.log(option.getAttribute("data-value"), option.getAttribute("value"), option.checked)
     if (option.checked) {
       if (option.getAttribute("data-value") == questionsArray[CurrentQuestion].correctAnswer) {
-        score += 10;
+        score += 1; console.log(score); alert("Correct answer");
       }
-    } else {
+			else { alert("Incorrect"); }
+    } 
+		else {
       results()
     }
   })
@@ -49,7 +52,19 @@ document.getElementById('form').addEventListener("submit", function (event) {
     pushQuestion()
   }
   else {
-    console.log(score)
+    awnser1.style.display = "none";
+		awnser2.style.display = "none";
+		awnser3.style.display = "none";
+		awnser4.style.display = "none";
+		op1.style.display = "none";
+		op2.style.display = "none";
+		op3.style.display = "none";
+		op4.style.display = "none";
+		NextButton.style.display = "none";
+		Qdisplay.style.display = "none";
+		finalScore.style.display = "block";
+	  document.getElementById("finalScore").innerHTML = score;
+		console.log(score);
   }
 });
 
@@ -123,4 +138,4 @@ function pushQuestion() {
   awnser3.textContent = questionsArray[CurrentQuestion].possibleAnswers[2]
   awnser4.textContent = questionsArray[CurrentQuestion].possibleAnswers[3]
   console.log("display", questionsArray[CurrentQuestion])
-}
+}``
