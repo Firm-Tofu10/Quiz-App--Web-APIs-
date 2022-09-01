@@ -76,7 +76,7 @@
     font-size: 60px;
 }
 #final-score {
-	display: flex;
+	display: none;
 	background-color: black;
 		border-color: white;
 		border-radius: 4rem;

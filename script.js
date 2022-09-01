@@ -1,21 +1,22 @@
-var subbmitQuiz = document.getElementById('StartSubmit')
-var cycleQuestions
+var subbmitQuiz = document.getElementById('StartSubmit');
+var cycleQuestions;
 var minutesfortimer = 10;
 let timeCount = 100;
 let timerObj;
-var container = document.getElementById('article')
-container.style.display = "none"
+var container = document.getElementById('article');
+container.style.display = "none";
 var CurrentQuestion = 0;
-var awnser1 = document.getElementById('ButtonA')
-var awnser2 = document.getElementById('ButtonB')
-var awnser3 = document.getElementById('ButtonC')
-var awnser4 = document.getElementById('ButtonD')
-var question = document.getElementById('Qdisplay')
-var selection = document.getElementsByName('selection')
-var Adisplay = document.getElementsByTagName('Adisplay')
+var awnser1 = document.getElementById('ButtonA');
+var awnser2 = document.getElementById('ButtonB');
+var awnser3 = document.getElementById('ButtonC');
+var awnser4 = document.getElementById('ButtonD');
+var question = document.getElementById('Qdisplay');
+var selection = document.getElementsByName('selection');
+var Adisplay = document.getElementsByTagName('Adisplay');
 var score = 0
-var timerElement = document.getElementById('timer')
-
+var timerElement = document.getElementById('timer');
+var finalScore = document.getElementById("final-score");
+var final = document.getElementById("final");
 
 function clickHandler(event) {
   console.log('Button click', event);
