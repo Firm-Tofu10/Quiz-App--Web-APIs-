@@ -47,6 +47,9 @@
    word-break: break-all;
    border-radius: 1rem;
 	 height: 20px;
+	 margin-right: 2rem;
+	 margin-left: 2rem;
+	 margin-bottom: 1rem;
 }
 
 #StartSubmit {

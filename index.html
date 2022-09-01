@@ -1,37 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="styles.css">
-    <title>Quiz APP</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="styles.css">
+	<title>Quiz APP</title>
 </head>
+
 <body class="pageMain">
-    <p id="timer">10:00</p>
-        <div class="container">    
-            <h1 class="Title">Java Script Quiz</h1>
-            <form id="form" class="form"> 
-                <button id="StartSubmit" type="submit" class="btn">Start/Submit?</button>
-                <article id="article">
-                <button id="NextButton" type="submit" class="btn">Next Question:</button>
-                <h2 id="Qdisplay">This is the Question</h2>
-                    
-                <input type="radio" id="op1" name="selection" data-value="0" class="btn options">A</input>
-                    <h3 id="ButtonA" for="op1" class="Adisplay"></h3>
-                
-                <input type="radio" name="selection" data-value="1" class="btn options">B</input>
-                    <h3 id="ButtonB" class="Adisplay">Answer2</h3>
-                
-                <input type="radio" name="selection" data-value="2" class="btn options">C</input>
-                    <h3 id="ButtonC" class="Adisplay">Answer3</h3>
-                
-                <input type="radio" name="selection" data-value="3" class="btn options">D</input>
-                    <h3 id="ButtonD" class="Adisplay">Answer4</h3>
-                </article>
-            </form>
-						<div id="final-score"><div id="final"></div>/6</div>
-        </div>
-        <script src="script.js"></script>
-    </body>
-    </html>
+	<p id="timer">10:00</p>
+	<div class="container">
+		<h1 class="Title">Java Script Quiz</h1>
+		<form id="form" class="form">
+			<button id="StartSubmit" type="submit" class="btn">Start/Submit?</button>
+			<article id="article">
+				<button id="NextButton" type="submit" class="btn">Next Question:</button>
+				<h2 id="Qdisplay">This is the Question</h2>
+				<div class="Adisplay">
+					<input type="radio" id="op1" name="selection" data-value="0" class="btn options"></input>
+					<label id="ButtonA" for="op1"></label>
+				</div>
+				<div class="Adisplay">
+					<input type="radio" name="selection" data-value="1" class="btn options"></input>
+					<label id="ButtonB">Answer2</label>
+				</div>
+				<div class="Adisplay">
+					<input type="radio" name="selection" data-value="2" class="btn options"></input>
+					<label id="ButtonC">Answer3</label>
+				</div>
+				<div class="Adisplay">
+					<input type="radio" name="selection" data-value="3" class="btn options"></input>
+					<label id="ButtonD">Answer4</label>
+				</div>
+			</article>
+		</form>
+		<div id="final-score">
+			<div id="final"></div>/6
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+
+</html>
