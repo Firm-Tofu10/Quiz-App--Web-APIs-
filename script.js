@@ -52,14 +52,7 @@ document.getElementById('form').addEventListener("submit", function (event) {
     pushQuestion()
   }
   else {
-    awnser1.style.display = "none";
-		awnser2.style.display = "none";
-		awnser3.style.display = "none";
-		awnser4.style.display = "none";
-		op1.style.display = "none";
-		op2.style.display = "none";
-		op3.style.display = "none";
-		op4.style.display = "none";
+    article.style.display = "none";
 		NextButton.style.display = "none";
 		Qdisplay.style.display = "none";
 		finalScore.style.display = "block";
