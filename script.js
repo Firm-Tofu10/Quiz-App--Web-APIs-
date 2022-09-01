@@ -1,5 +1,5 @@
 //This starts the quizz.
-var subbmitQuiz = document.getElementById('StartSubmit');
+var submitQuiz = document.getElementById('StartSubmit');
 //This helps hide all the elements in my container at the end of the quizz to display the final results.
 var container = document.getElementById('article');
 container.style.display = "none";
@@ -121,9 +121,9 @@ let questionsArray = [
 
 
 //This function is used to start the quizz.
-subbmitQuiz.addEventListener('click', function () {
-  container.style.display = "block";
-  subbmitQuiz.style.display = "none";
+submitQuiz.addEventListener('click', function () {
+	container.style.display = "block";
+  submitQuiz.style.display = "none";
   console.log("text");
   pushQuestion();
 })
@@ -136,4 +136,4 @@ function pushQuestion() {
   awnser3.textContent = questionsArray[CurrentQuestion].possibleAnswers[2]
   awnser4.textContent = questionsArray[CurrentQuestion].possibleAnswers[3]
   console.log("display", questionsArray[CurrentQuestion])
-}``
+}
