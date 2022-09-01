@@ -4,22 +4,22 @@ var countDownTime = countDownDate.getTime();
 // Update the count down every 1 second
 var x = setInterval(function() {
 
-  // Get today's date and time
+  // Gets current time.
   var now = new Date().getTime();
 
-  // Find the distance between now and the count down date
+  // Looks to see the timer length.
   var distance = countDownTime - now;
 
-  // Time calculations for minutes and seconds
+  // Vars for minutes and seconds.
 	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  // Display the result in the element with id="timer"
+  // Display the result in id="timer"
   document.getElementById("timer").innerHTML = minutes + ":" + seconds;
 
-  // If the count down is finished, write some text
+  // On timer end displays text. (Still working on a way on timer end to display score and end quizz.)
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("timer").innerHTML = "EXPIRED";
+    document.getElementById("timer").innerHTML = "Failure";
   }
 }, 1000);

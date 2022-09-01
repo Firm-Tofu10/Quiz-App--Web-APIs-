@@ -1,31 +1,41 @@
+//This starts the quizz.
 var subbmitQuiz = document.getElementById('StartSubmit');
-var cycleQuestions;
-var minutesfortimer = 10;
-let timeCount = 100;
-let timerObj;
+//This helps hide all the elements in my container at the end of the quizz to display the final results.
 var container = document.getElementById('article');
 container.style.display = "none";
+//This sets the current quetion to 1 in the array of questions or 0 in js.
 var CurrentQuestion = 0;
+//This helps search for the current question.
+var cycleQuestions;
+//The awnser1-4 are all vars for the buttons on the page.
 var awnser1 = document.getElementById('ButtonA');
 var awnser2 = document.getElementById('ButtonB');
 var awnser3 = document.getElementById('ButtonC');
 var awnser4 = document.getElementById('ButtonD');
+//This helps set were to display the question options.
 var question = document.getElementById('Qdisplay');
 var selection = document.getElementsByName('selection');
+//Is used for styleing and make objects block,flex or none.
 var Adisplay = document.getElementsByTagName('Adisplay');
+//This sets the stating score to 0 on the page refresh.
 var score = 0
 var timerElement = document.getElementById('timer');
+//Helps display final score as flex.
 var finalScore = document.getElementById("final-score");
+//Helps display final score calculation in the div.
 var final = document.getElementById("final");
+//clearInterval
+let timerObj;
+
 
 function clickHandler(event) {
   console.log('Button click', event);
 }
-
+//Display correct on correct anwser.
 function Correct() {
   console.log("Correct");
 }
-
+//Display incorrect on incorrect anwser.
 function Incorrect() {
   console.log("Incorrect");
 }
@@ -69,6 +79,7 @@ function results() {
 
 console.log(timer);
 
+//Array of all the questions that are displayed.
 let questionsArray = [
   {
     questionText: "How would you use somthing from your html in JavaScript?",
@@ -108,23 +119,15 @@ let questionsArray = [
 ]
 
 
-
+//This function is used to start the quizz.
 subbmitQuiz.addEventListener('click', function () {
   container.style.display = "block";
   subbmitQuiz.style.display = "none";
   console.log("text");
-  // timerObj = setInterval(() => {
-  // timerElement.textContent =  "Time:"+timeCount  
-  // if(timeCount>1){
-  //   timeCount--
-  // }lelse
-  // {
-  //   results()
-  // }
-  // }, 1000);
   pushQuestion();
 })
 
+//This function cycleQuestions in the order of the array.
 function pushQuestion() {
   question.textContent = questionsArray[CurrentQuestion].questionText
   awnser1.textContent = questionsArray[CurrentQuestion].possibleAnswers[0]
