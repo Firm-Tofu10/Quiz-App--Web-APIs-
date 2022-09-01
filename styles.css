@@ -47,8 +47,8 @@
    word-break: break-all;
    border-radius: 1rem;
 	 height: 20px;
-	 margin-right: 2rem;
-	 margin-left: 2rem;
+	 margin-right: 6rem;
+	 margin-left: 6rem;
 	 margin-bottom: 1rem;
 }
 
@@ -94,5 +94,6 @@
     align-items: center;
 }
 #timer {
-	color: white;
+	color: red;
+	font-size: 60px;
 }

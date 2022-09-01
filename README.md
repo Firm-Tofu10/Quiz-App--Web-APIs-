@@ -41,5 +41,5 @@ Bryson Benson Source for start code of the timer:https: //www.w3schools.com/howt
 If you have any questions, please contact me at brysonnbenson10@gmail.com
 
 #### Sources
-https://www.w3schools.com/howto/howto_js_countdown.asp (This was starter code this was not an exact copy.)
+https://www.w3schools.com/howto/howto_js_countdown.asp (This was starter code this was not an exact copy. It is modified to fit my needs as a timer and not a date.)
 

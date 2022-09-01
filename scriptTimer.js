@@ -1,5 +1,7 @@
+//https://www.w3schools.com/howto/howto_js_countdown.asp 
+//(This was starter code this was not an exact copy. It is modified to fit my needs as a count down timer and not a count down date.)
 var countDownDate = new Date();
-countDownDate.setMinutes(countDownDate.getMinutes() + 10);
+countDownDate.setMinutes(countDownDate.getMinutes() + 5);
 var countDownTime = countDownDate.getTime();
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -20,6 +22,6 @@ var x = setInterval(function() {
   // On timer end displays text. (Still working on a way on timer end to display score and end quizz.)
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("timer").innerHTML = "Failure";
+    document.getElementById("timer").innerHTML = "Times Up!";
   }
 }, 1000);

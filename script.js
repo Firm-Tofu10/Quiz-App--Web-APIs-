@@ -69,6 +69,7 @@ document.getElementById('form').addEventListener("submit", function (event) {
 		finalScore.style.display = "flex";
 	  document.getElementById("final").innerHTML = score;
 		console.log(score);
+		timer.style.display = "none";
   }
 });
 
@@ -83,37 +84,37 @@ console.log(timer);
 let questionsArray = [
   {
     questionText: "How would you use somthing from your html in JavaScript?",
-    possibleAnswers: ["I have a chicken", "Class or ID", "3", "4"],
+    possibleAnswers: ["I have a chicken", "Class or ID", "Quotes", "Semicolon"],
     correctAnswer: 1
   },
   {
     questionText: "What must end any string in javascript?",
-    possibleAnswers: ["Vanilla", "semicolon", "3", "4"],
+    possibleAnswers: ["Vanilla", "Semicolon", "Colon", "Quotes",],
     correctAnswer: 1
   },
   {
     questionText: "What is the primart purpose of a function in Java Script?",
-    possibleAnswers: ["To Create a complex or simple group of commands to achive an operation.", "2", "3", "4"],
+    possibleAnswers: ["To Create a complex or simple group of commands to achive an operation.", "To create an array.", "To make and element block.", "To show a list of of styles."],
     correctAnswer: 0
   },
   {
     questionText: "Why do we need JavaScript at all and not just HTML or CSS?",
-    possibleAnswers: ["JavaScript helps us do tasks that would be considered complex to achive with just html and css.", "2", "3", "4"],
+    possibleAnswers: ["JavaScript helps us do tasks that would be considered complex to achive with just html and css.", "JavaScript helps us style.", "JavaScript helps us format HTML.", "JavaScript helps us create images."],
     correctAnswer: 0
   },
   {
     questionText: "What is another name for an array in JavaScript?",
-    possibleAnswers: ["1", "2", "A list.", "4"],
+    possibleAnswers: ["Collection", "Funtion", "A list.", "Shell"],
     correctAnswer: 2
   },
   {
     questionText: "What is the basic purpose of creating an array?",
-    possibleAnswers: ["1", "2", "3", "To make a group of items that the programmer can pull from."],
+    possibleAnswers: ["To control scope.", "To help the user interact with the page.", "To help the developers log errors.", "To make a group of items that the programmer can pull from."],
     correctAnswer: 3
   },
   {
     questionText: "What is the difference between Const and Var?",
-    possibleAnswers: ["The scope of a var is functional scope while the scope of const is block scope.", "2", "3", "4"],
+    possibleAnswers: ["The scope of a var is functional scope while the scope of const is block scope.", "To help control the possible postions of elements on the webpage.", "One has the ability to control CSS elements the other controls js elements.", "They are the same."],
     correctAnswer: 0
   }
 ]
