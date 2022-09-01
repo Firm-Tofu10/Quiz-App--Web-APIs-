@@ -75,6 +75,18 @@
     color: white;
     font-size: 60px;
 }
-.final {
-	display:none;
+#final-score {
+	display: flex;
+	background-color: black;
+		border-color: white;
+		border-radius: 4rem;
+		color: white;
+		position: absolute;
+		top:40%;
+		left:40%;
+		width: 20%;
+		height: 20%;
+		font-size: 90px;
+		justify-content: center;
+    align-items: center;
 }

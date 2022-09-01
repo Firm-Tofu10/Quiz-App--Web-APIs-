@@ -15,7 +15,7 @@ var selection = document.getElementsByName('selection')
 var Adisplay = document.getElementsByTagName('Adisplay')
 var score = 0
 var timerElement = document.getElementById('timer')
-// selection.addEventListener()
+
 
 function clickHandler(event) {
   console.log('Button click', event);
@@ -55,8 +55,8 @@ document.getElementById('form').addEventListener("submit", function (event) {
     article.style.display = "none";
 		NextButton.style.display = "none";
 		Qdisplay.style.display = "none";
-		finalScore.style.display = "block";
-	  document.getElementById("finalScore").innerHTML = score;
+		finalScore.style.display = "flex";
+	  document.getElementById("final").innerHTML = score;
 		console.log(score);
   }
 });
