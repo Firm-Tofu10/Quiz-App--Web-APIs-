@@ -5,6 +5,7 @@ const Start = document.getElementById("StartSubmit")
 var countDownDate = new Date();
 countDownDate.setMinutes(countDownDate.getMinutes() + 3);
 var countDownTime = countDownDate.getTime();
+var wrong = countDownDate.setMinutes(countDownDate.getSeconds() - 20);
 // Update the count down every 1 second
 var x = setInterval(function () {
 
@@ -22,6 +23,7 @@ var x = setInterval(function () {
 	document.getElementById("timer").innerHTML = minutes + ":" + seconds;
 
 	// On timer end displays text. (Still working on a way on timer end to display score and end quizz.)
+	if("Incorrect") { countDownDate.setMinutes(countDownDate.getSeconds() - 20);
 	if (distance < 0) {
 		// if (Start != null) {return false;}
 		// else {
@@ -34,6 +36,7 @@ var x = setInterval(function () {
 		document.getElementById("final").innerHTML = score;
 		// }
 	}
+}
 }, 1000);
 }
 
