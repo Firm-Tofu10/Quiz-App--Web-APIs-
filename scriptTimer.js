@@ -1,7 +1,7 @@
 //https://www.w3schools.com/howto/howto_js_countdown.asp 
 //(This was starter code this was not an exact copy. It is modified to fit my needs as a count down timer and not a count down date.)
 var countDownDate = new Date();
-countDownDate.setMinutes(countDownDate.getMinutes() + 5);
+countDownDate.setMinutes(countDownDate.getMinutes() + 1);
 var countDownTime = countDownDate.getTime();
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -23,5 +23,10 @@ var x = setInterval(function() {
   if (distance < 0) {
     clearInterval(x);
     document.getElementById("timer").innerHTML = "Times Up!";
+		article.style.display = "none";
+		NextButton.style.display = "none";
+		Qdisplay.style.display = "none";
+		finalScore.style.display = "flex";
+		document.getElementById("final").innerHTML = score;
   }
 }, 1000);
